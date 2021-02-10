@@ -13,8 +13,9 @@
 /* Elementos base*/
 body{
     background: var(--preta);
-    font-family:'Times New Roman', Times, serif;
+    font-family:'sans-serif', Times, serif;
     color: white;
+    text-decoration-style: solid;
 }
 
 header .container {
@@ -23,6 +24,12 @@ header .container {
     align-items: center;
     justify-content: space-between;
 }
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:right;
+}
 
 header .logo{
     background: url('/img/netflix-logo.png') no-repeat;
@@ -30,18 +37,57 @@ header .logo{
     width: 300px;
     margin-left: 5px;
     color: var(--vermelho);
-    font-family: 'Arial Black', Helvetica, sans-serif;
+    font-family: 'sans-serif', Helvetica, Arial Black;
     font: size 40px;
+    text-decoration-style: solid;
 }
 
-header nav a{
+nav a{
     text-decoration: none;
     color: var(--branco);
     margin-right: 10px;
+    text-decoration-style: solid;
 }
 
-header nav a:hover{
+nav a:hover{
     color: #fff;
+}
+
+.usuario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right:10px;
+}
+
+.perfil{
+    background: url('/img/perfil.png') no-repeat;
+    width:50px;
+    height:50px;
+    background-size: cover;
+    border-radius: 7px;
+
+}
+
+.menu-trigger{
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-bottom-width: 0px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-right-color :rgba(0, 0, 0, 0);
+    border-right-style: solid;
+    border-right-width: 5px;
+    border-top-color: rgb(255, 255, 255);
+    border-top-style: solid;
+    border-top-width: 5px;
+    content: "";
+    display: block;
+    height: 0px;
+    margin-left: 5px;
+    width: 0px;
+    margin-top: 26px;
 }
 
 /* Filme principal*/
@@ -65,7 +111,8 @@ header nav a:hover{
 
 .titulo{
     background: url('/img/titulo.png') no-repeat;
-    height:300px;
-    font-size: 40px;
-    margin-top: 600px;
-    }
+    height:200px;
+    font-size: 30px;
+    margin-top: 300px;
+    background-size: cover;
+}
